@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Norse';
-    src: url('Norse.woff2') format('woff2'),
-        url('Norse.woff') format('woff');
+    src: url('fonts/Norse.woff2') format('woff2'),
+        url('fonts/Norse.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: 'Norse-Bold';
-    src: url('Norse-Bold.woff2') format('woff2'),
-        url('Norse-Bold.woff') format('woff');
+    src: url('fonts/Norse-Bold.woff2') format('woff2'),
+        url('fonts/Norse-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -20,4 +20,54 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    display: flex;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.splash {
+    background-image: url("images/halie-west-25xggax4bSA-unsplash.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0 0 0 / 50%);
+    width: 100%;
+    height: 20%;
+    padding: 20px;
+    margin-top: 40%;
+}
+
+.title > img {
+    height: 100%;
+}
+
+.title > h1 {
+    color: white;
+    font-family: "Norse-Bold", sans-serif;
+    font-size: 7em;
+}
+
+.photo-credits {
+    color: white;
+    font-family: sans-serif;
+    margin-top: auto;
+    margin-bottom: 3%;
+}
+
+.photo-credits > a {
+    color: inherit;
 }
